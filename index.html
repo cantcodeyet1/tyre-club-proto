@@ -1,0 +1,2134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tyre Club — Design System | Kwanix Enterprises</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============================================================
+     PROGRESS BAR
+     Fills yellow as the user scrolls. Controlled in scripts.js.
+     ============================================================ -->
+<div class="progress-bar">
+  <div class="progress-bar-fill" id="progressFill"></div>
+</div>
+
+
+<!-- ============================================================
+     SIDEBAR NAVIGATION
+     Add new .nav-item entries here to link to new sections.
+     Each href must match a section id below.
+     ============================================================ -->
+<nav class="sidenav">
+
+  <!-- Logo -->
+  <div class="sidenav-logo">
+    <img src="assets/kwanix_logo.png" alt="logo-sub">Tyre Club · Design System v1.0</div>
+  </div>
+
+  <!-- Scrollable nav links -->
+  <div class="sidenav-body">
+
+    <div class="nav-section">Document</div>
+    <a class="nav-item active" href="#cover">
+      <span class="nav-dot"></span>Cover
+    </a>
+    <a class="nav-item" href="#changelog">
+      <span class="nav-dot"></span>Changelog
+    </a>
+
+    <!-- ── MODULE SCREENS (shown before design system) ── -->
+    <div class="nav-section">Module screens</div>
+    <a class="nav-item" href="#m-onboarding">
+      <span class="nav-dot"></span>01 Onboarding
+    </a>
+    <a class="nav-item" href="#m-home">
+      <span class="nav-dot"></span>02 Home
+    </a>
+    <a class="nav-item" href="#m-vehicles">
+      <span class="nav-dot"></span>03 Vehicles
+    </a>
+    <a class="nav-item" href="#m-health">
+      <span class="nav-dot"></span>04 Health
+    </a>
+    <a class="nav-item" href="#m-trips">
+      <span class="nav-dot"></span>05 Trips
+    </a>
+    <a class="nav-item" href="#m-deals">
+      <span class="nav-dot"></span>06 Deals
+    </a>
+    <a class="nav-item" href="#m-profile">
+      <span class="nav-dot"></span>07 Profile
+    </a>
+
+    <!-- ── DESIGN SYSTEM ── -->
+    <div class="nav-section">Design system</div>
+    <a class="nav-item" href="#tokens">
+      <span class="nav-dot"></span>Design tokens
+    </a>
+    <a class="nav-item" href="#components">
+      <span class="nav-dot"></span>Component library
+    </a>
+
+    <!-- ── ARCHITECTURE ── -->
+    <div class="nav-section">Architecture</div>
+    <a class="nav-item" href="#ia">
+      <span class="nav-dot"></span>IA map
+    </a>
+
+    <!-- ── HANDOFF ── -->
+    <div class="nav-section">Handoff</div>
+    <a class="nav-item" href="#prototype">
+      <span class="nav-dot"></span>Prototype connections
+    </a>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="sidenav-footer">
+    <div class="client">Tyre Club · Kwanix Enterprises</div>
+    <div class="ver">v1.0 · Round 1</div>
+  </div>
+
+</nav>
+
+
+<!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+<div class="main">
+
+
+  <!-- ==========================================================
+       SECTION: COVER
+       id="cover" — matches sidebar nav href
+       ========================================================== -->
+  <section class="section" id="cover">
+
+    <div class="cover-hero glass-card">
+      <!-- Decorative geometry (CSS-only, no images needed) -->
+      <div class="cover-geo"></div>
+
+      <span class="cover-badge">UI/UX Design System &nbsp;·&nbsp; v1.0</span>
+
+      <h1 class="cover-title">
+        Tyre Club App<br>
+        <strong>Design File</strong>
+      </h1>
+
+      <p class="cover-sub">
+        Complete high-fidelity screen designs, design tokens, component library,
+        information architecture, and prototype connections for the Tyre Club
+        mobile application.
+      </p>
+
+      <!-- Stats row -->
+      <div class="cover-stats">
+        <div>
+          <div class="cstat-num">36</div>
+          <div class="cstat-label">Screens</div>
+        </div>
+        <div>
+          <div class="cstat-num">7</div>
+          <div class="cstat-label">Modules</div>
+        </div>
+        <div>
+          <div class="cstat-num">5</div>
+          <div class="cstat-label">Nav tabs</div>
+        </div>
+        <div>
+          <div class="cstat-num">48</div>
+          <div class="cstat-label">Components</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meta grid — edit values here -->
+    <div class="cover-meta">
+      <div class="cover-meta-cell"><div class="cmc-label">Client</div><div class="cmc-value">Tyre Club</div></div>
+      <div class="cover-meta-cell"><div class="cmc-label">Prepared by</div><div class="cmc-value">Kwanix Enterprises</div></div>
+      <div class="cover-meta-cell"><div class="cmc-label">Version</div><div class="cmc-value">1.0 — Client review</div></div>
+      <div class="cover-meta-cell"><div class="cmc-label">Platform</div><div class="cmc-value">iOS &amp; Android</div></div>
+      <div class="cover-meta-cell"><div class="cmc-label">Frame size</div><div class="cmc-value">390 × 844px (iPhone 14)</div></div>
+      <div class="cover-meta-cell"><div class="cmc-label">Status</div><div class="cmc-value">Round 1 design</div></div>
+    </div>
+
+  </section><!-- /cover -->
+
+
+  <!-- ==========================================================
+       SECTION: CHANGELOG
+       Add new rows to the table as versions progress.
+       ========================================================== -->
+  <section class="section" id="changelog">
+
+    <span class="section-eyebrow">Document history</span>
+    <h2 class="section-title"><strong>Changelog</strong></h2>
+    <p class="section-desc">
+      A record of every design decision, revision, and client-approved change
+      made across the life of this project.
+    </p>
+
+    <table class="changelog-table">
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Date</th>
+          <th>Author</th>
+          <th>Changes</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- ── ADD NEW ROWS AT THE TOP ── -->
+
+        <tr>
+          <td><span class="ver-pill">v1.0</span></td>
+          <td>Apr 2026</td>
+          <td>Kwanix Enterprises</td>
+          <td>
+            Initial design round. All 27 screens across 6 modules. Design tokens,
+            component library, IA map, and prototype connections documented.
+            Round 1 submitted for client review.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="ver-pill muted">v1.1</span></td>
+          <td>TBD</td>
+          <td>—</td>
+          <td>
+            Pending client feedback. Copy blocks for 10 check types.
+            Status threshold confirmation (14-day vs 30-day).
+            WhatsApp message template approval.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="ver-pill muted">v2.0</span></td>
+          <td>TBD</td>
+          <td>—</td>
+          <td>
+            Post-approval iteration. Developer handoff. Full asset export.
+            Annotated specs. Prototype wired in Figma.
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </section><!-- /changelog -->
+
+
+  <!-- ==========================================================
+       SECTION: MODULE 01 — ONBOARDING
+       
+       HOW TO SWAP IN FIGMA FRAMES:
+       1. Open Figma → select the frame → Share → Copy link
+       2. Replace the figma-placeholder div with:
+            <iframe src="https://www.figma.com/embed?embed_host=share&url=YOUR_LINK"></iframe>
+       3. Or export PNG to /assets/screens/ and use:
+            <img src="assets/screens/OB-01.png" alt="Splash screen">
+       ========================================================== -->
+  <section class="section" id="m-onboarding">
+
+    <span class="section-eyebrow">Module 01</span>
+    <h2 class="section-title"><strong>Onboarding</strong></h2>
+    <p class="section-desc">
+      First-launch experience. Runs once only — never repeated. Takes the user
+      from brand introduction through account creation and first vehicle setup.
+    </p>
+
+    <div class="screen-grid">
+
+      <!-- OB-01 Splash -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <img src="assets/modules/OB-01a.svg" alt="OB-01a"/>
+          </div>
+        </div>
+        <div class="screen-name">Splash 1 — brand</div>
+        <div class="screen-id">OB-01a</div>
+      </div>
+
+      <!-- OB-01b Splash value prop -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <img src="assets/modules/OB-01b.svg" alt="OB-01b"/>
+          </div>
+        </div>
+        <div class="screen-name">Splash 2 — manage vehicles</div>
+        <div class="screen-id">OB-01b</div>
+      </div>
+
+      <!-- OB-01c -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <img src="assets/modules/OB-01c.svg" alt="OB-01c"/>
+          </div>
+        </div>
+        <div class="screen-name">Splash 3 — check-ups</div>
+        <div class="screen-id">OB-01c</div>
+      </div>
+
+      <!-- OB-01d -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <img src="assets/modules/OB-01d.svg" alt="OB-01d"/>
+          </div>
+        </div>
+        <div class="screen-name">Splash 4 — plan trips</div>
+        <div class="screen-id">OB-01d</div>
+      </div>
+
+      <!-- OB-01e -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <img src="assets/modules/OB-01e.svg" alt="OB-01e"/>
+          </div>
+        </div>
+        <div class="screen-name">Splash 5 — plan trips</div>
+        <div class="screen-id">OB-01e</div>
+      </div>
+
+      <!-- OB-02 Sign in -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+              <img src="assets/modules/OB-02.svg" alt="OB-02"/>
+          </div>
+        </div>
+        <div class="screen-name">Sign in</div>
+        <div class="screen-id">OB-02</div>
+      </div>
+
+      <!-- OB-03 Sign up -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+              <img src="assets/modules/0B-03.svg" alt="OB-02"/>
+          </div>
+        </div>
+        <div class="screen-name">Sign up</div>
+        <div class="screen-id">OB-03</div>
+      </div>
+
+      <!-- OB-04b Forgot password -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+           <img src="assets/modules/OB-04b.svg" alt="OB-04b" />
+          </div>
+        </div>
+        <div class="screen-name">Forgot password</div>
+        <div class="screen-id">OB-04b</div>
+      </div>
+
+      <!-- OB-05 Setup wizard step 1 -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <img src="assets/modules/OB-05a.svg" alt="OB-05a"/>
+          </div>
+        </div>
+        <div class="screen-name">Notification permission</div>
+        <div class="screen-id">OB-05a</div>
+      </div>
+
+      <!-- OB-05 Setup wizard step 2 -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <img src="assets/modules/OB-05b.svg" alt="OB-05b"/>
+          </div>
+        </div>
+        <div class="screen-name">Setup wizard — vehicle info</div>
+        <div class="screen-id">OB-05b</div>
+      </div>
+
+      <!-- OB-05b Setup wizard step 3 -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+           <div class="figma-slot">
+            <img src="assets/modules/OB-05c.svg" alt="OB-05c"/>
+          </div>
+          </div>
+        </div>
+        <div class="screen-name">Setup wizard — tyres</div>
+        <div class="screen-id">OB-05c</div>
+      </div>
+
+      <!-- OB-05b Setup wizard step 4 -->
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar">
+            <span class="phone-time">9:41</span>
+            <span class="phone-signal">●●● ▲</span>
+          </div>
+          <div class="figma-slot">
+            <div class="figma-slot">
+            <img src="assets/modules/OB-05d.svg" alt="OB-05d"/>
+          </div>
+          </div>
+        </div>
+        <div class="screen-name">Setup wizard — tyres</div>
+        <div class="screen-id">OB-05d</div>
+      </div>
+
+
+    </div><!-- /screen-grid -->
+
+  </section><!-- /m-onboarding -->
+
+
+  <!-- ==========================================================
+       SECTION: MODULE 02 — HOME
+       ========================================================== -->
+  <section class="section" id="m-home">
+
+    <span class="section-eyebrow">Module 02</span>
+    <h2 class="section-title"><strong>Home dashboard</strong></h2>
+    <p class="section-desc">
+      The re-engagement surface. Every session starts here. Vehicle health at a
+      glance, urgent items surfaced first, quick actions always within reach.
+    </p>
+
+    <div class="screen-grid">
+
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot">
+              <img src="assets/modules/HM-01.svg" alt="HM-01">
+          </div>
+        </div>
+        <div class="screen-name">Home dashboard</div>
+        <div class="screen-id">HM-01</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone">
+          <div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot">
+              <img src="assets/modules/HM-01b.svg" alt="HM-01b"/>
+          </div>
+        </div>
+        <div class="screen-name">Home — empty state</div>
+        <div class="screen-id">HM-01b</div>
+      </div>
+
+    </div>
+
+  </section><!-- /m-home -->
+
+
+  <!-- ==========================================================
+       SECTION: MODULE 03 — VEHICLES
+       ========================================================== -->
+  <section class="section" id="m-vehicles">
+
+    <span class="section-eyebrow">Module 03</span>
+    <h2 class="section-title"><strong>Vehicles</strong></h2>
+    <p class="section-desc">
+      The source of truth per vehicle. Every check, compliance item, trip, and
+      report is anchored to a specific car and accessible from one place.
+    </p>
+
+    <div class="screen-grid">
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot">
+            <img src="assets/modules/VH-01.svg" alt="VH-01"/>
+          </div>
+        </div>
+        <div class="screen-name">Vehicle list</div><div class="screen-id">VH-01</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-02a.svg" alt="VH-02a"/></div>
+        </div>
+        <div class="screen-name">Vehicle detail — overview</div><div class="screen-id">VH-02a</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-02b.svg" alt="VH=02b"/></div>
+        </div>
+        <div class="screen-name">Vehicle detail — checks</div><div class="screen-id">VH-02b</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-02c.svg" alt="VH-02c"/></div>
+        </div>
+        <div class="screen-name">Vehicle detail — trips</div><div class="screen-id">VH-02c</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-02d.svg" alt="VH-02d"/></div>
+        </div>
+        <div class="screen-name">Vehicle detail — reports</div><div class="screen-id">VH-02e</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-03.svg" alt="VH-03"></div>
+        </div>
+        <div class="screen-name">Check detail</div><div class="screen-id">VH-03</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-04a.svg" alt="VH-04a"/></div>
+        </div>
+        <div class="screen-name">Log entry — tyre</div><div class="screen-id">VH-04a</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-04b.svg" alt="VH-04b"/></div>
+        </div>
+        <div class="screen-name">Log entry — compliance</div><div class="screen-id">VH-04b</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/VH-05.svg" alt="VH-05"/></div>
+        </div>
+        <div class="screen-name">Add vehicle</div><div class="screen-id">VH-05</div>
+      </div>
+
+    </div>
+
+  </section><!-- /m-vehicles -->
+
+
+  <!-- ==========================================================
+       SECTION: MODULE 04 — HEALTH
+       ========================================================== -->
+  <section class="section" id="m-health">
+
+    <span class="section-eyebrow">Module 04</span>
+    <h2 class="section-title"><strong>Health</strong></h2>
+    <p class="section-desc">
+      Cross-vehicle aggregate. Answers: what do I need to do this week, across
+      all my cars? A lens over vehicle data — nothing stored independently here.
+    </p>
+
+    <div class="screen-grid">
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/HC-01a.svg" alt="HC-01A"/></div>
+        </div>
+        <div class="screen-name">Health — all</div><div class="screen-id">HC-01a</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/HC-01b.svg" alt="HC-01b"/></div>
+        </div>
+        <div class="screen-name">Health — compliance</div><div class="screen-id">HC-01b</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/HC-01c.svg" alt="HC-01c"/></div>
+        </div>
+        <div class="screen-name">Health — service</div><div class="screen-id">HC-01c</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/HC-01d.svg" alt="HC-01d"/></div>
+        </div>
+        <div class="screen-name">Health — reports</div><div class="screen-id">HC-01d</div>
+      </div>
+
+    </div>
+
+  </section><!-- /m-health -->
+
+
+  <!-- ==========================================================
+       SECTION: MODULE 05 — TRIPS
+       ========================================================== -->
+  <section class="section" id="m-trips">
+
+    <span class="section-eyebrow">Module 05</span>
+    <h2 class="section-title"><strong>Trips</strong></h2>
+    <p class="section-desc">
+      Plan, track, and review trips. Captures estimated vs actual costs.
+      Generates a shareable post-trip summary card.
+    </p>
+
+    <div class="screen-grid">
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/TR-01.svg" alt="TR-01"/></div>
+        </div>
+        <div class="screen-name">Trips list</div><div class="screen-id">TR-01</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/TR-02.svg" alt="TR-02"/></div>
+        </div>
+        <div class="screen-name">Plan a trip</div><div class="screen-id">TR-02</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/TR-03.svg" alt="TR-03"/></div>
+        </div>
+        <div class="screen-name">Past trip details</div><div class="screen-id">TR-03</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/TR-04.svg" alt="TR-04"/></div>
+        </div>
+        <div class="screen-name">Edit upcoming trip</div><div class="screen-id">TR-04</div>
+      </div>
+
+    </div>
+
+  </section><!-- /m-trips -->
+
+
+  <!-- ==========================================================
+       SECTION: MODULE 06 — DEALS
+       ========================================================== -->
+  <section class="section" id="m-deals">
+
+    <span class="section-eyebrow">Module 06</span>
+    <h2 class="section-title"><strong>Deals &amp; Tyre Club</strong></h2>
+    <p class="section-desc">
+      The commercial and brand hub. Deals (credit, MAZ, buy tyres) sit at the
+      top level. Tyre Club brand resources (branches, products, help) live
+      nested beneath as a sub-section within the same tab.
+    </p>
+
+    <div class="screen-grid">
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/DL-01.svg" alt="DL-01"/></div>
+        </div>
+        <div class="screen-name">Deals hub</div><div class="screen-id">DL-01</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/DL-02.svg" alt="DL-02"/></div>
+        </div>
+        <div class="screen-name">Buy on credit</div><div class="screen-id">DL-02</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/DL-03.svg" alt="DL-03"/></div>
+        </div>
+        <div class="screen-name">MAZ scheme</div><div class="screen-id">DL-03</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/DL-04.svg" alt="DL-04"/></div>
+        </div>
+        <div class="screen-name">Buy tyres</div><div class="screen-id">DL-04</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/TC-01.svg" alt="TC-01"/></div>
+        </div>
+        <div class="screen-name">Tyre Club hub</div><div class="screen-id">TC-01</div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/TC-02.svg" alt="TC-02"/></div>
+        </div>
+        <div class="screen-name">Branches &amp; hours</div><div class="screen-id">TC-02</div>
+      </div>
+
+    </div>
+
+  </section><!-- /m-deals -->
+
+
+  <!-- ==========================================================
+       SECTION: MODULE 07 — PROFILE
+       ========================================================== -->
+  <section class="section" id="m-profile">
+
+    <span class="section-eyebrow">Module 06</span>
+    <h2 class="section-title"><strong>Profile</strong></h2>
+    <p class="section-desc">
+      Account management and Tyre Club brand resource hub. Accessed via the
+      avatar icon — top-right corner of any screen, not a bottom nav tab.
+    </p>
+
+    <div class="screen-grid">
+
+      <div class="screen-wrap">
+        <div class="phone"><div class="phone-bar"><span class="phone-time">9:41</span><span class="phone-signal">●●● ▲</span></div>
+          <div class="figma-slot"><img src="assets/modules/PR-01.svg" alt="PR-01"/></div>
+        </div>
+        <div class="screen-name">Profile</div><div class="screen-id">PR-01</div>
+      </div>
+
+    
+
+    </div>
+
+  </section><!-- /m-profile -->
+
+
+  <!-- ==========================================================
+       SECTION: DESIGN TOKENS
+       Edit the token-grid and type-row items to match
+       your actual design decisions.
+       ========================================================== -->
+  <section class="section" id="tokens">
+
+    <span class="section-eyebrow">Design system</span>
+    <h2 class="section-title"><strong>Design tokens</strong></h2>
+    <p class="section-desc">
+      Every colour, type scale, spacing value, and radius. All components
+      reference these tokens — never raw values.
+    </p>
+
+    <!-- COLOUR TOKENS -->
+    <div class="comp-label">Colour palette</div>
+    <div class="token-grid">
+      <!-- ── ADD / EDIT COLOUR TOKENS HERE ── -->
+      <div class="token-card">
+        <div class="token-swatch" style="background:#F5C800"></div>
+        <div class="token-info">
+          <div class="token-name">Yellow · Primary</div>
+          <div class="token-value">#F5C800 · --yellow</div>
+        </div>
+      </div>
+      <div class="token-card">
+        <div class="token-swatch" style="background:#1a1a1a"></div>
+        <div class="token-info">
+          <div class="token-name">Text · Primary</div>
+          <div class="token-value">#1a1a1a · --text-primary</div>
+        </div>
+      </div>
+      <div class="token-card">
+        <div class="token-swatch" style="background:#5a5755"></div>
+        <div class="token-info">
+          <div class="token-name">Text · Secondary</div>
+          <div class="token-value">#5a5755 · --text-secondary</div>
+        </div>
+      </div>
+      <div class="token-card">
+        <div class="token-swatch" style="background:#f0ede8"></div>
+        <div class="token-info">
+          <div class="token-name">Page background</div>
+          <div class="token-value">#f0ede8 · --page-bg</div>
+        </div>
+      </div>
+      <div class="token-card">
+        <div class="token-swatch" style="background:#ffffff"></div>
+        <div class="token-info">
+          <div class="token-name">Surface · Primary</div>
+          <div class="token-value">#ffffff · --surface-solid</div>
+        </div>
+      </div>
+      <div class="token-card">
+        <div class="token-swatch" style="background:#d93025"></div>
+        <div class="token-info">
+          <div class="token-name">Red · Attention Required</div>
+          <div class="token-value">#d93025 · --red</div>
+        </div>
+      </div>
+      <div class="token-card">
+        <div class="token-swatch" style="background:#c97c00"></div>
+        <div class="token-info">
+          <div class="token-name">Amber · Needs Attention</div>
+          <div class="token-value">#c97c00 · --amber</div>
+        </div>
+      </div>
+      <div class="token-card">
+        <div class="token-swatch" style="background:#1a7a52"></div>
+        <div class="token-info">
+          <div class="token-name">Green · All Good</div>
+          <div class="token-value">#1a7a52 · --green</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYPOGRAPHY SCALE -->
+    <div class="comp-label">Typography scale</div>
+    <!-- ── EDIT TYPE ROWS ── -->
+    <div class="type-row">
+      <span class="type-label">Display</span>
+      <span style="font-size:28px;font-weight:700;">Tyre Club</span>
+      <span class="type-spec">DM Sans 700 · 28px</span>
+    </div>
+    <div class="type-row">
+      <span class="type-label">H1</span>
+      <span style="font-size:22px;font-weight:600;">Good morning, Tendai</span>
+      <span class="type-spec">DM Sans 600 · 22px</span>
+    </div>
+    <div class="type-row">
+      <span class="type-label">H2</span>
+      <span style="font-size:18px;font-weight:600;">Toyota Hilux</span>
+      <span class="type-spec">DM Sans 600 · 18px</span>
+    </div>
+    <div class="type-row">
+      <span class="type-label">H3</span>
+      <span style="font-size:15px;font-weight:500;">Vehicle detail</span>
+      <span class="type-spec">DM Sans 500 · 15px</span>
+    </div>
+    <div class="type-row">
+      <span class="type-label">Body</span>
+      <span style="font-size:13px;font-weight:400;">Next: Wheel rotation overdue</span>
+      <span class="type-spec">DM Sans 400 · 13px</span>
+    </div>
+    <div class="type-row">
+      <span class="type-label">Caption</span>
+      <span style="font-size:11px;font-weight:400;color:var(--text-secondary);">Updated 2 weeks ago</span>
+      <span class="type-spec">DM Sans 400 · 11px</span>
+    </div>
+    <div class="type-row">
+      <span class="type-label">Label</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-tertiary);">Insurance</span>
+      <span class="type-spec">DM Sans 600 · 10px · caps</span>
+    </div>
+    <div class="type-row">
+      <span class="type-label">Mono</span>
+      <span style="font-size:12px;font-family:'DM Mono',monospace;color:var(--text-secondary);">XYZ 789 · v1.0.0</span>
+      <span class="type-spec">DM Mono 400 · 12px</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SPACING SCALE -->
+    <div class="comp-label">Spacing scale</div>
+    <!-- ── EDIT SPACING TOKENS ── -->
+    <div class="sp-row"><span class="sp-token">--sp-1</span><div class="sp-bar" style="width:4px"></div><span class="sp-px">4px</span></div>
+    <div class="sp-row"><span class="sp-token">--sp-2</span><div class="sp-bar" style="width:8px"></div><span class="sp-px">8px</span></div>
+    <div class="sp-row"><span class="sp-token">--sp-3</span><div class="sp-bar" style="width:12px"></div><span class="sp-px">12px</span></div>
+    <div class="sp-row"><span class="sp-token">--sp-4</span><div class="sp-bar" style="width:16px"></div><span class="sp-px">16px</span></div>
+    <div class="sp-row"><span class="sp-token">--sp-6</span><div class="sp-bar" style="width:24px"></div><span class="sp-px">24px</span></div>
+    <div class="sp-row"><span class="sp-token">--sp-8</span><div class="sp-bar" style="width:32px"></div><span class="sp-px">32px</span></div>
+    <div class="sp-row"><span class="sp-token">--sp-12</span><div class="sp-bar" style="width:48px"></div><span class="sp-px">48px</span></div>
+
+    <div class="divider"></div>
+
+    <!-- BORDER RADIUS -->
+    <div class="comp-label">Border radius</div>
+    <div class="flex gap-4" style="flex-wrap:wrap">
+      <div class="text-center">
+        <div style="width:48px;height:48px;background:white;border:1px solid var(--border-2);border-radius:4px;margin-bottom:6px;box-shadow:var(--shadow-sm)"></div>
+        <div class="text-xs text-tertiary">xs · 4px</div>
+      </div>
+      <div class="text-center">
+        <div style="width:48px;height:48px;background:white;border:1px solid var(--border-2);border-radius:8px;margin-bottom:6px;box-shadow:var(--shadow-sm)"></div>
+        <div class="text-xs text-tertiary">sm · 8px</div>
+      </div>
+      <div class="text-center">
+        <div style="width:48px;height:48px;background:white;border:1px solid var(--border-2);border-radius:12px;margin-bottom:6px;box-shadow:var(--shadow-sm)"></div>
+        <div class="text-xs text-tertiary">md · 12px</div>
+      </div>
+      <div class="text-center">
+        <div style="width:48px;height:48px;background:white;border:1px solid var(--border-2);border-radius:16px;margin-bottom:6px;box-shadow:var(--shadow-sm)"></div>
+        <div class="text-xs text-tertiary">lg · 16px</div>
+      </div>
+      <div class="text-center">
+        <div style="width:48px;height:48px;background:white;border:1px solid var(--border-2);border-radius:50%;margin-bottom:6px;box-shadow:var(--shadow-sm)"></div>
+        <div class="text-xs text-tertiary">full</div>
+      </div>
+    </div>
+
+  </section><!-- /tokens -->
+
+
+  <!-- ==========================================================
+       SECTION: COMPONENT LIBRARY
+       Each sub-section has a .comp-label header.
+       ========================================================== -->
+  <section class="section" id="components">
+
+    <span class="section-eyebrow">Design system</span>
+    <h2 class="section-title"><strong>Component library</strong></h2>
+    <p class="section-desc">
+      Every reusable UI element in all its states. Reference these when building
+      in Figma — every screen is assembled from these parts.
+    </p>
+
+    <!-- ── 12a BUTTONS ── -->
+    <div class="comp-label">Buttons</div>
+    <svg width="700" height="148" viewBox="0 0 700 148" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;overflow:visible">
+      <defs>
+        <linearGradient id="cta-grad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFF200"/>
+          <stop offset="1" stop-color="#FFCB14"/>
+        </linearGradient>
+        <filter id="btn-shadow" x="-20%" y="-40%" width="140%" height="200%">
+          <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#F5C800" flood-opacity="0.35"/>
+        </filter>
+      </defs>
+
+      <!-- PRIMARY -->
+      <text x="0" y="11" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.07em">PRIMARY</text>
+      <rect x="0" y="20" width="162" height="42" rx="10" fill="url(#cta-grad)" filter="url(#btn-shadow)"/>
+      <text x="81" y="46" font-family="'DM Sans', sans-serif" font-size="13" fill="#111111" font-weight="500" text-anchor="middle" dominant-baseline="middle">Schedule maintenance</text>
+
+      <!-- SECONDARY -->
+      <text x="178" y="11" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.07em">SECONDARY</text>
+      <rect x="178" y="20" width="118" height="42" rx="10" fill="white" stroke="#D1D2D4" stroke-width="1"/>
+      <text x="237" y="46" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="500" text-anchor="middle" dominant-baseline="middle">View history</text>
+
+      <!-- GHOST -->
+      <text x="312" y="11" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.07em">GHOST</text>
+      <text x="356" y="46" font-family="'DM Sans', sans-serif" font-size="13" fill="#5a5755" font-weight="400" text-anchor="middle" dominant-baseline="middle">Skip for now</text>
+
+      <!-- DANGER -->
+      <text x="430" y="11" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.07em">DANGER</text>
+      <rect x="430" y="20" width="120" height="42" rx="10" fill="rgba(217,48,37,0.08)" stroke="rgba(217,48,37,0.22)" stroke-width="1"/>
+      <text x="490" y="46" font-family="'DM Sans', sans-serif" font-size="13" fill="#a52018" font-weight="500" text-anchor="middle" dominant-baseline="middle">Delete vehicle</text>
+
+      <!-- SMALL -->
+      <text x="566" y="11" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.07em">SMALL</text>
+      <rect x="566" y="24" width="88" height="34" rx="8" fill="white" stroke="#D1D2D4" stroke-width="1"/>
+      <text x="610" y="46" font-family="'DM Sans', sans-serif" font-size="12" fill="#1a1a1a" font-weight="500" text-anchor="middle" dominant-baseline="middle">Log entry</text>
+
+      <!-- FULL WIDTH -->
+      <text x="0" y="86" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.07em">FULL WIDTH</text>
+      <rect x="0" y="96" width="345" height="42" rx="10" fill="url(#cta-grad)" filter="url(#btn-shadow)"/>
+      <text x="172" y="122" font-family="'DM Sans', sans-serif" font-size="13" fill="#111111" font-weight="500" text-anchor="middle" dominant-baseline="middle">+ Add a Vehicle</text>
+    </svg>
+
+    <div class="divider"></div>
+
+    <!-- ── 12b STATUS PILLS ── -->
+    <div class="comp-label">Status pills</div>
+    <svg width="520" height="44" viewBox="0 0 520 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <!-- Attention Required — red -->
+      <rect x="0" y="10" width="145" height="24" rx="12" fill="#FFBFBF" stroke="#FB2929" stroke-width="1"/>
+      <circle cx="17" cy="22" r="4" fill="#FB2929"/>
+      <text x="27" y="22" font-family="'DM Sans', sans-serif" font-size="11" fill="#a52018" font-weight="500" dominant-baseline="middle">Attention Required</text>
+
+      <!-- Needs Attention — amber -->
+      <rect x="159" y="10" width="136" height="24" rx="12" fill="#F5BC72" stroke="#FF9000" stroke-width="1"/>
+      <circle cx="176" cy="22" r="4" fill="#FF9000"/>
+      <text x="186" y="22" font-family="'DM Sans', sans-serif" font-size="11" fill="#8a5500" font-weight="500" dominant-baseline="middle">Needs Attention</text>
+
+      <!-- All Good — green -->
+      <rect x="309" y="10" width="90" height="24" rx="12" fill="#A6EEA9" stroke="#00D807" stroke-width="1"/>
+      <circle cx="326" cy="22" r="4" fill="#00D807"/>
+      <text x="336" y="22" font-family="'DM Sans', sans-serif" font-size="11" fill="#155c3e" font-weight="500" dominant-baseline="middle">All Good</text>
+
+      <!-- Neutral — license pending -->
+      <rect x="413" y="10" width="107" height="24" rx="12" fill="#E4E4E4" stroke="#606060" stroke-width="1"/>
+      <text x="466" y="22" font-family="'DM Sans', sans-serif" font-size="11" fill="#494A4C" font-weight="500" dominant-baseline="middle" text-anchor="middle">License Pending</text>
+    </svg>
+
+    <div class="divider"></div>
+
+    <!-- ── 12c FORM FIELDS ── -->
+    <div class="comp-label">Form fields</div>
+    <svg width="560" height="178" viewBox="0 0 560 178" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <!-- Make field — default -->
+      <text x="0" y="11" font-family="'DM Sans', sans-serif" font-size="11" fill="#5a5755" font-weight="500">Make</text>
+      <rect x="0" y="18" width="260" height="40" rx="14.5" fill="white" stroke="#D9D9D9" stroke-width="1"/>
+      <text x="16" y="43" font-family="'DM Sans', sans-serif" font-size="13" fill="#9a9490" dominant-baseline="middle">e.g. Toyota</text>
+      <text x="0" y="66" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Select or type vehicle make</text>
+
+      <!-- Registration field — error state -->
+      <text x="300" y="11" font-family="'DM Sans', sans-serif" font-size="11" fill="#5a5755" font-weight="500">Registration</text>
+      <rect x="300" y="18" width="260" height="40" rx="14.5" fill="white" stroke="#FB2929" stroke-width="1.5"/>
+      <!-- error glow -->
+      <rect x="300" y="18" width="260" height="40" rx="14.5" fill="rgba(217,48,37,0.06)" stroke="none"/>
+      <rect x="300" y="18" width="260" height="40" rx="14.5" fill="none" stroke="#FB2929" stroke-width="1.5"/>
+      <text x="316" y="43" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" dominant-baseline="middle">xyz</text>
+      <text x="300" y="66" font-family="'DM Sans', sans-serif" font-size="11" fill="#a52018">Use valid registration format</text>
+
+      <!-- Expiry date field -->
+      <text x="0" y="95" font-family="'DM Sans', sans-serif" font-size="11" fill="#5a5755" font-weight="500">Expiry date</text>
+      <rect x="0" y="102" width="260" height="40" rx="14.5" fill="white" stroke="#D9D9D9" stroke-width="1"/>
+      <text x="16" y="127" font-family="'DM Sans', sans-serif" font-size="13" fill="#9a9490" dominant-baseline="middle">dd / mm / yyyy</text>
+      <!-- calendar icon -->
+      <rect x="230" y="116" width="16" height="13" rx="2" fill="none" stroke="#9a9490" stroke-width="1.2"/>
+      <line x1="234" y1="114" x2="234" y2="119" stroke="#9a9490" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="242" y1="114" x2="242" y2="119" stroke="#9a9490" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="230" y1="122" x2="246" y2="122" stroke="#9a9490" stroke-width="1"/>
+
+      <!-- Notes field -->
+      <text x="300" y="95" font-family="'DM Sans', sans-serif" font-size="11" fill="#5a5755" font-weight="500">Notes</text>
+      <rect x="300" y="102" width="260" height="40" rx="14.5" fill="white" stroke="#D9D9D9" stroke-width="1"/>
+      <text x="316" y="127" font-family="'DM Sans', sans-serif" font-size="13" fill="#9a9490" dominant-baseline="middle">Optional notes…</text>
+
+      <!-- Focus state example -->
+      <text x="0" y="162" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="500" letter-spacing="0.05em">FOCUS STATE</text>
+      <rect x="90" y="154" width="200" height="24" rx="8" fill="rgba(245,200,0,0.10)" stroke="#F5C800" stroke-width="1.5"/>
+      <text x="103" y="166" font-family="'DM Sans', sans-serif" font-size="11" fill="#1a1a1a" dominant-baseline="middle">Vehicle make active…</text>
+    </svg>
+
+    <div class="divider"></div>
+
+    <!-- ── 12d VEHICLE CARDS ── -->
+    <div class="comp-label">Vehicle cards - all status states</div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start">
+      <img src="assets/modules/state-card-1.svg" alt="Attention Required card" style="display:block">
+      <img src="assets/modules/state-card-2.svg" alt="Needs Attention card" style="display:block">
+      <img src="assets/modules/state-card-3.svg" alt="All Good card" style="display:block">
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ── 12g TYRE POSITION SELECTOR ── -->
+    <div class="comp-label">Tyre position selector</div>
+    <svg width="320" height="210" viewBox="0 0 320 210" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <defs>
+        <linearGradient id="tyre-sel-grad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFF200"/>
+          <stop offset="1" stop-color="#FFCB14"/>
+        </linearGradient>
+      </defs>
+      <!-- Container -->
+      <rect x="0" y="0" width="200" height="200" rx="16" fill="rgba(0,0,0,0.04)" stroke="rgba(0,0,0,0.07)" stroke-width="1"/>
+
+      <!-- Car body -->
+      <rect x="72" y="30" width="56" height="130" rx="12" fill="white" stroke="#D1D2D4" stroke-width="1.5"/>
+      <!-- windscreen lines -->
+      <rect x="80" y="44" width="40" height="24" rx="4" fill="#E8F4FF" stroke="#D1D2D4" stroke-width="1"/>
+      <rect x="80" y="118" width="40" height="24" rx="4" fill="#E8F4FF" stroke="#D1D2D4" stroke-width="1"/>
+      <!-- door line -->
+      <line x1="72" y1="95" x2="128" y2="95" stroke="#D1D2D4" stroke-width="1"/>
+
+      <!-- FL tyre — SELECTED (yellow) -->
+      <rect x="26" y="28" width="36" height="18" rx="4" fill="url(#tyre-sel-grad)" stroke="#FFCB14" stroke-width="1"/>
+      <text x="44" y="37" font-family="'DM Sans', sans-serif" font-size="9" fill="#111" font-weight="700" text-anchor="middle" dominant-baseline="middle">FL</text>
+
+      <!-- FR tyre -->
+      <rect x="138" y="28" width="36" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
+      <text x="156" y="37" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">FR</text>
+
+      <!-- RL tyre -->
+      <rect x="26" y="130" width="36" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
+      <text x="44" y="139" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">RL</text>
+
+      <!-- RR tyre -->
+      <rect x="138" y="130" width="36" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
+      <text x="156" y="139" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">RR</text>
+
+      <!-- Spare tyre -->
+      <rect x="74" y="170" width="52" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
+      <text x="100" y="179" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">Spare</text>
+
+      <!-- Hint text -->
+      <text x="100" y="198" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" text-anchor="middle">Tap to select position</text>
+
+      <!-- Annotation: FL selected -->
+      <text x="220" y="30" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.05em">FL SELECTED</text>
+      <line x1="62" y1="37" x2="215" y2="37" stroke="#FFCB14" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="62" cy="37" r="3" fill="#FFCB14"/>
+
+      <!-- Annotation: default state -->
+      <text x="220" y="90" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.05em">DEFAULT</text>
+      <line x1="174" y1="139" x2="215" y2="97" stroke="#D1D2D4" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="174" cy="139" r="3" fill="#D1D2D4"/>
+    </svg>
+
+    <div class="divider"></div>
+
+    <!-- ── 12h QUICK ACTION STRIP ── -->
+    <div class="comp-label">Quick action strip</div>
+    <svg width="345" height="62" viewBox="0 0 345 62" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <defs>
+        <filter id="qa-shadow" x="-4%" y="-10%" width="108%" height="130%">
+          <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.07"/>
+        </filter>
+      </defs>
+      <!-- Log Trip button -->
+      <rect x="0" y="0" width="166" height="54" rx="14" fill="white" stroke="#F2F2F2" stroke-width="1" filter="url(#qa-shadow)"/>
+      <!-- icon box -->
+      <rect x="14" y="14" width="28" height="28" rx="8" fill="rgba(245,200,0,0.12)" stroke="rgba(245,200,0,0.30)" stroke-width="1"/>
+      <!-- arrow-up-right icon -->
+      <path d="M24 32 L32 24 M28 24 L32 24 L32 28" stroke="#7a6000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="25" font-family="'DM Sans', sans-serif" font-size="12" fill="#1a1a1a" font-weight="500" dominant-baseline="middle">Log Trip</text>
+      <text x="52" y="40" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490">Record a journey</text>
+
+      <!-- Log Maintenance button -->
+      <rect x="179" y="0" width="166" height="54" rx="14" fill="white" stroke="#F2F2F2" stroke-width="1" filter="url(#qa-shadow)"/>
+      <!-- icon box -->
+      <rect x="193" y="14" width="28" height="28" rx="8" fill="rgba(245,200,0,0.12)" stroke="rgba(245,200,0,0.30)" stroke-width="1"/>
+      <!-- wrench icon -->
+      <path d="M207 22 L203 30 L205 32 L213 28 L213 24 Z" fill="rgba(245,200,0,0.5)" stroke="#7a6000" stroke-width="1" stroke-linejoin="round"/>
+      <circle cx="211" cy="23" r="2" fill="none" stroke="#7a6000" stroke-width="1.2"/>
+      <text x="231" y="25" font-family="'DM Sans', sans-serif" font-size="12" fill="#1a1a1a" font-weight="500" dominant-baseline="middle">Log Maintenance</text>
+      <text x="231" y="40" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490">Record a service</text>
+    </svg>
+
+    <div class="divider"></div>
+
+    <!-- ── 12f BOTTOM NAVIGATION ── -->
+    <div class="comp-label">Bottom navigation bar</div>
+    <img src="assets/modules/nav.svg" alt="Bottom navigation bar" style="display:block">
+
+    <div class="divider"></div>
+
+    <!-- ── 12i CHECK ROWS ── -->
+    <div class="comp-label">Check rows</div>
+    <svg width="380" height="196" viewBox="0 0 380 196" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <!-- Row 1 — Attention (red) -->
+      <circle cx="10" cy="28" r="6" fill="#FB2929"/>
+      <text x="28" y="23" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="500">Tyre pressure check</text>
+      <text x="28" y="38" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Last checked 6 months ago</text>
+      <rect x="290" y="17" width="56" height="22" rx="11" fill="#FFBFBF" stroke="#FB2929" stroke-width="1"/>
+      <text x="318" y="28" font-family="'DM Sans', sans-serif" font-size="9" fill="#a52018" font-weight="500" text-anchor="middle" dominant-baseline="middle">Overdue</text>
+      <!-- chevron -->
+      <path d="M360 22 L367 28 L360 34" stroke="#9a9490" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line x1="0" y1="52" x2="380" y2="52" stroke="#F2F2F2" stroke-width="1"/>
+
+      <!-- Row 2 — Needs Attention (amber) -->
+      <circle cx="10" cy="80" r="6" fill="#FF9000"/>
+      <text x="28" y="75" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="500">Wheel alignment</text>
+      <text x="28" y="90" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Due in 2 weeks · 500 km remaining</text>
+      <rect x="290" y="69" width="65" height="22" rx="11" fill="#F5BC72" stroke="#FF9000" stroke-width="1"/>
+      <text x="322" y="80" font-family="'DM Sans', sans-serif" font-size="9" fill="#8a5500" font-weight="500" text-anchor="middle" dominant-baseline="middle">Due Soon</text>
+      <path d="M360 74 L367 80 L360 86" stroke="#9a9490" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line x1="0" y1="104" x2="380" y2="104" stroke="#F2F2F2" stroke-width="1"/>
+
+      <!-- Row 3 — All Good (green) -->
+      <circle cx="10" cy="132" r="6" fill="#00D807"/>
+      <text x="28" y="127" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="500">Tyre rotation</text>
+      <text x="28" y="142" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Scheduled in 1 month</text>
+      <rect x="290" y="121" width="58" height="22" rx="11" fill="#A6EEA9" stroke="#00D807" stroke-width="1"/>
+      <text x="319" y="132" font-family="'DM Sans', sans-serif" font-size="9" fill="#155c3e" font-weight="500" text-anchor="middle" dominant-baseline="middle">On Track</text>
+      <path d="M360 126 L367 132 L360 138" stroke="#9a9490" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line x1="0" y1="156" x2="380" y2="156" stroke="#F2F2F2" stroke-width="1"/>
+
+      <!-- Row 4 — Neutral -->
+      <circle cx="10" cy="180" r="6" fill="#D1D2D4"/>
+      <text x="28" y="175" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="500">Brake inspection</text>
+      <text x="28" y="190" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">No data recorded yet</text>
+      <rect x="290" y="169" width="58" height="22" rx="11" fill="#E4E4E4" stroke="#606060" stroke-width="1"/>
+      <text x="319" y="180" font-family="'DM Sans', sans-serif" font-size="9" fill="#494A4C" font-weight="500" text-anchor="middle" dominant-baseline="middle">No Data</text>
+      <path d="M360 174 L367 180 L360 186" stroke="#9a9490" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+
+    <div class="divider"></div>
+
+    <!-- ── 12j BOTTOM SHEET ── -->
+    <div class="comp-label">Bottom sheet</div>
+    <svg width="393" height="220" viewBox="0 0 393 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <defs>
+        <linearGradient id="bs-btn-grad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFF200"/>
+          <stop offset="1" stop-color="#FFCB14"/>
+        </linearGradient>
+      </defs>
+      <!-- dim overlay hint -->
+      <rect x="0" y="0" width="393" height="60" rx="0" fill="rgba(0,0,0,0.18)"/>
+      <!-- sheet -->
+      <rect x="0" y="36" width="393" height="184" rx="20" fill="white"/>
+      <!-- top rounded cap -->
+      <rect x="0" y="36" width="393" height="20" fill="white"/>
+      <!-- handle bar -->
+      <rect x="176" y="48" width="41" height="4" rx="2" fill="#D1D2D4"/>
+      <!-- title -->
+      <text x="24" y="80" font-family="'DM Sans', sans-serif" font-size="16" fill="#1a1a1a" font-weight="600">Log Maintenance</text>
+      <!-- divider -->
+      <line x1="24" y1="94" x2="369" y2="94" stroke="#F2F2F2" stroke-width="1"/>
+      <!-- option row 1 -->
+      <rect x="24" y="104" width="32" height="32" rx="8" fill="rgba(245,200,0,0.12)" stroke="rgba(245,200,0,0.25)" stroke-width="1"/>
+      <path d="M34 116 L40 122 L46 116" stroke="#7a6000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="68" y="119" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="500">Oil change</text>
+      <text x="68" y="133" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Record a fluid service</text>
+      <path d="M360 114 L367 120 L360 126" stroke="#9a9490" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <line x1="24" y1="148" x2="369" y2="148" stroke="#F2F2F2" stroke-width="1"/>
+      <!-- option row 2 -->
+      <rect x="24" y="158" width="32" height="32" rx="8" fill="rgba(245,200,0,0.12)" stroke="rgba(245,200,0,0.25)" stroke-width="1"/>
+      <circle cx="40" cy="174" r="6" fill="none" stroke="#7a6000" stroke-width="1.5"/>
+      <path d="M37 174 L40 171 L43 174 L40 177 Z" fill="#7a6000"/>
+      <text x="68" y="173" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="500">Tyre rotation</text>
+      <text x="68" y="187" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Record tyre position change</text>
+      <path d="M360 168 L367 174 L360 180" stroke="#9a9490" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+
+    <div class="divider"></div>
+
+    <!-- ── 12k SUMMARY CARDS ── -->
+    <div class="comp-label">Summary cards</div>
+    <svg width="380" height="136" viewBox="0 0 380 136" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <defs>
+        <filter id="sc-shadow" x="-4%" y="-4%" width="108%" height="120%">
+          <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.06"/>
+        </filter>
+      </defs>
+      <!-- Summary card -->
+      <rect x="0" y="0" width="380" height="128" rx="20" fill="white" stroke="#F2F2F2" stroke-width="1" filter="url(#sc-shadow)"/>
+      <!-- header -->
+      <text x="20" y="24" font-family="'DM Sans', sans-serif" font-size="13" fill="#1a1a1a" font-weight="600">Vehicle Health Summary</text>
+      <text x="360" y="24" font-family="'DM Sans', sans-serif" font-size="11" fill="#7a6000" font-weight="500" text-anchor="end">View all</text>
+      <line x1="20" y1="36" x2="360" y2="36" stroke="#F2F2F2" stroke-width="1"/>
+
+      <!-- Stat 1 -->
+      <text x="20" y="62" font-family="'DM Sans', sans-serif" font-size="22" fill="#1a1a1a" font-weight="700">3</text>
+      <text x="20" y="76" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Vehicles</text>
+
+      <!-- Stat 2 -->
+      <text x="120" y="62" font-family="'DM Sans', sans-serif" font-size="22" fill="#FB2929" font-weight="700">1</text>
+      <text x="120" y="76" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Needs action</text>
+
+      <!-- Stat 3 -->
+      <text x="240" y="62" font-family="'DM Sans', sans-serif" font-size="22" fill="#00D807" font-weight="700">12</text>
+      <text x="240" y="76" font-family="'DM Sans', sans-serif" font-size="11" fill="#9a9490">Checks on track</text>
+
+      <!-- mini progress bar -->
+      <rect x="20" y="90" width="340" height="6" rx="3" fill="#F2F2F2"/>
+      <rect x="20" y="90" width="226" height="6" rx="3" fill="url(#bs-btn-grad)"/>
+      <text x="20" y="108" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490">Overall health score</text>
+      <text x="360" y="108" font-family="'DM Sans', sans-serif" font-size="10" fill="#7a6000" font-weight="600" text-anchor="end">66%</text>
+
+      <!-- next due -->
+      <text x="20" y="122" font-family="'DM Mono', monospace" font-size="10" fill="#9a9490">Next due: Wheel alignment — Toyota Hilux</text>
+    </svg>
+
+  </section><!-- /components -->
+
+
+  <!-- ==========================================================
+       SECTION: IA MAP — interactive tab-driven
+       ========================================================== -->
+  <section class="section" id="ia">
+
+    <span class="section-eyebrow">Architecture</span>
+    <h2 class="section-title"><strong>IA map</strong></h2>
+    <p class="section-desc">
+      Complete navigation structure across all 36 screens. Select a tab below
+      to explore each section's screen hierarchy, filters, modals, empty states,
+      and deep-link entry points.
+    </p>
+
+    <!-- ── Legend ── -->
+    <div class="ia-legend">
+      <div class="ia-legend-item"><span class="ia-dot ia-dot-ob"></span>Onboarding</div>
+      <div class="ia-legend-item"><span class="ia-dot ia-dot-core"></span>Core screen</div>
+      <div class="ia-legend-item"><span class="ia-dot ia-dot-modal"></span>Modal / sheet</div>
+      <div class="ia-legend-item"><span class="ia-dot ia-dot-empty"></span>Empty state</div>
+      <div class="ia-legend-item"><span class="ia-dot ia-dot-dl"></span>Deep-link entry</div>
+      <div class="ia-legend-item ia-legend-arrow"><span class="ia-arrow-solid"></span>Primary flow</div>
+      <div class="ia-legend-item ia-legend-arrow"><span class="ia-arrow-dashed"></span>Return / dismiss</div>
+    </div>
+
+    <!-- ── Interactive hint ── -->
+    <div class="ia-hint">
+      <span class="ia-hint-pulse"></span>
+      The tab bar below mirrors the app's navigation — tap each tab to explore its screen architecture
+    </div>
+
+    <!-- ── Tab nav bar (mirrors app) ── -->
+    <div class="ia-shell glass-card">
+
+      <div class="ia-tab-bar" role="tablist">
+        <button class="ia-tab ia-tab-active" data-panel="auth" role="tab">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2a3 3 0 100 6 3 3 0 000-6zM3 13c0-2.21 2.24-4 5-4s5 1.79 5 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          Auth
+        </button>
+        <button class="ia-tab" data-panel="home" role="tab">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 7L8 2l6 5v7a1 1 0 01-1 1H3a1 1 0 01-1-1V7z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          Home
+        </button>
+        <button class="ia-tab" data-panel="vehicle" role="tab">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="7" width="14" height="6" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 7l2-4h6l2 4" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="4" cy="13" r="1.5" fill="currentColor"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></svg>
+          Vehicle
+        </button>
+        <button class="ia-tab" data-panel="health" role="tab">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 14s-6-4-6-8a4 4 0 018 0 4 4 0 018 0c0 4-6 8-6 8z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          Health
+        </button>
+        <button class="ia-tab" data-panel="trips" role="tab">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 12l3-8 3 5 2-3 4 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Trips
+        </button>
+        <button class="ia-tab" data-panel="deals" role="tab">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.4"/></svg>
+          Deals
+        </button>
+        <button class="ia-tab" data-panel="profile" role="tab">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M2 14c0-3.31 2.69-6 6-6s6 2.69 6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          Profile
+        </button>
+      </div>
+
+      <!-- ══════════════════════════════════
+           PANEL: AUTH
+           ══════════════════════════════════ -->
+      <div class="ia-panel ia-panel-active" id="ia-panel-auth">
+        <div class="ia-panel-header">
+          <span class="ia-panel-eyebrow">Onboarding · Auth</span>
+          <span class="ia-panel-count">10 screens</span>
+        </div>
+        <div class="ia-flow">
+
+          <!-- Row 1: Splash -->
+          <div class="ia-row ia-row-center">
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-01</div>
+              <div class="ia-node-name">Splash screen</div>
+              <div class="ia-node-sub">OB-01a – 01d · first launch only</div>
+            </div>
+          </div>
+          <div class="ia-connector-down"></div>
+
+          <!-- Row 2: Sign in -->
+          <div class="ia-row ia-row-center">
+            <div class="ia-node ia-node-ob ia-node-wide">
+              <div class="ia-node-id">OB-02</div>
+              <div class="ia-node-name">Sign in</div>
+              <div class="ia-node-sub">Email · Apple [iOS] · Google [Android]</div>
+            </div>
+          </div>
+
+          <!-- 3-way split labels -->
+          <div class="ia-split-labels" style="grid-template-columns:repeat(3,1fr)">
+            <span>new user</span>
+            <span>returning</span>
+            <span>forgot pw</span>
+          </div>
+          <div class="ia-split-3"></div>
+
+          <!-- Row 3: Sign up / Notif / Forgot -->
+          <div class="ia-row ia-row-3col">
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-02a</div>
+              <div class="ia-node-name">Sign up</div>
+              <div class="ia-node-sub">Name · email · T&amp;Cs</div>
+            </div>
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-04</div>
+              <div class="ia-node-name">Allow notifications</div>
+              <div class="ia-node-sub">Rationale · iOS + Android</div>
+            </div>
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-03</div>
+              <div class="ia-node-name">Forgot password</div>
+              <div class="ia-node-sub">Enter email address</div>
+            </div>
+          </div>
+
+          <!-- Down arrows from 3 -->
+          <div class="ia-connectors-3">
+            <div class="ia-connector-down"></div>
+            <div class="ia-connector-down"></div>
+            <div class="ia-connector-down"></div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="ia-row ia-row-3col">
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-02b</div>
+              <div class="ia-node-name">Verify email</div>
+              <div class="ia-node-sub">Check inbox gate</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">OB-05</div>
+              <div class="ia-node-name">Vehicle setup wizard</div>
+              <div class="ia-node-sub">4 steps · first-time only</div>
+            </div>
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-03a</div>
+              <div class="ia-node-name">Check your email</div>
+              <div class="ia-node-sub">Reset link sent</div>
+            </div>
+          </div>
+
+          <div class="ia-connectors-3">
+            <div class="ia-connector-down-merge">↓ merges to OB-04</div>
+            <div class="ia-connector-down"></div>
+            <div class="ia-connector-down"></div>
+          </div>
+
+          <!-- Row 5 -->
+          <div class="ia-row ia-row-3col">
+            <div class="ia-node ia-node-empty" style="visibility:hidden"></div>
+            <div class="ia-node ia-node-core ia-node-dest">
+              <div class="ia-node-id">HM-01</div>
+              <div class="ia-node-name">Home screen</div>
+              <div class="ia-node-sub">App entry point</div>
+            </div>
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-03b</div>
+              <div class="ia-node-name">Reset password</div>
+              <div class="ia-node-sub">New password form</div>
+            </div>
+          </div>
+
+          <div class="ia-connectors-3">
+            <div></div>
+            <div></div>
+            <div class="ia-connector-down"></div>
+          </div>
+
+          <div class="ia-row ia-row-3col">
+            <div></div>
+            <div></div>
+            <div class="ia-node ia-node-ob">
+              <div class="ia-node-id">OB-03c</div>
+              <div class="ia-node-name">Reset success</div>
+              <div class="ia-node-sub ia-return">↻ returns to OB-02</div>
+            </div>
+          </div>
+
+          <!-- Platform note -->
+          <div class="ia-platform-note">
+            <strong>iOS:</strong> Sign in with Apple mandatory when any SSO is offered &nbsp;·&nbsp;
+            <strong>Android:</strong> Google Sign-In is the required equivalent
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════
+           PANEL: HOME
+           ══════════════════════════════════ -->
+      <div class="ia-panel" id="ia-panel-home">
+        <div class="ia-panel-header">
+          <span class="ia-panel-eyebrow">Home tab · HM</span>
+          <span class="ia-panel-count">5 screens + deep-links</span>
+        </div>
+        <div class="ia-flow">
+
+          <div class="ia-row ia-row-center">
+            <div class="ia-node ia-node-core ia-node-wide">
+              <div class="ia-node-id">HM-01</div>
+              <div class="ia-node-name">Home screen</div>
+              <div class="ia-node-sub">Vehicle cards · quick actions · deals banner · Add vehicle CTA · notification deep-links</div>
+            </div>
+          </div>
+
+          <div class="ia-split-labels" style="grid-template-columns:repeat(4,1fr)">
+            <span>avatar</span><span>Add vehicle</span><span>quick action</span><span>deals banner</span>
+          </div>
+          <div class="ia-split-4"></div>
+
+          <div class="ia-row ia-row-4col">
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">PR-01</div>
+              <div class="ia-node-name">Profile</div>
+              <div class="ia-node-sub">Account · membership</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">VH-05</div>
+              <div class="ia-node-name">Add vehicle</div>
+              <div class="ia-node-sub ia-return">↻ returns to HM-01</div>
+            </div>
+            <div class="ia-node ia-node-dl">
+              <div class="ia-node-id">[DL]</div>
+              <div class="ia-node-name">Quick action</div>
+              <div class="ia-node-sub">→ specific check or trip</div>
+            </div>
+            <div class="ia-node ia-node-dl">
+              <div class="ia-node-id">[DL]</div>
+              <div class="ia-node-name">Deals banner</div>
+              <div class="ia-node-sub">→ DL-01 / DL-02</div>
+            </div>
+          </div>
+
+          <div class="ia-platform-note">
+            <strong>Deep-link schema:</strong> tyreclub://vehicle/{id}/check/{checkId} · tyreclub://deals/{dealId} · tyreclub://trip/{tripId} · tyreclub://branch/{id}/map
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════
+           PANEL: VEHICLE
+           ══════════════════════════════════ -->
+      <div class="ia-panel" id="ia-panel-vehicle">
+        <div class="ia-panel-header">
+          <span class="ia-panel-eyebrow">Vehicle tab · VH</span>
+          <span class="ia-panel-count">7 screens + empty state</span>
+        </div>
+        <div class="ia-flow">
+
+          <div class="ia-row ia-row-2col">
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">VH-01</div>
+              <div class="ia-node-name">Vehicle list</div>
+              <div class="ia-node-sub">Filter: All · Needs attention · License pending</div>
+            </div>
+            <div class="ia-node ia-node-empty">
+              <div class="ia-node-id">VH-01E</div>
+              <div class="ia-node-name">Empty state</div>
+              <div class="ia-node-sub">Zero vehicles → prompt Add vehicle</div>
+            </div>
+          </div>
+
+          <div class="ia-connectors-2">
+            <div class="ia-connector-down"></div>
+            <div class=" ia-connector-right">→ VH-05</div>
+          </div>
+
+          <div class="ia-row ia-row-center">
+            <div class="ia-node ia-node-core ia-node-wide">
+              <div class="ia-node-id">VH-02</div>
+              <div class="ia-node-name">Vehicle detail</div>
+              <div class="ia-node-sub">Segmented filter: Overview · Checks · Trips · History · Reports (per vehicle)</div>
+            </div>
+          </div>
+
+          <div class="ia-split-labels" style="grid-template-columns:repeat(3,1fr)">
+            <span>checks row</span><span>log new entry</span><span>⋯ overflow</span>
+          </div>
+          <div class="ia-split-3"></div>
+
+          <div class="ia-row ia-row-3col">
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">VH-03</div>
+              <div class="ia-node-name">Check detail</div>
+              <div class="ia-node-sub">Log history · notification setting</div>
+            </div>
+            <div class="ia-node ia-node-modal">
+              <div class="ia-node-id">VH-04</div>
+              <div class="ia-node-name">Log entry</div>
+              <div class="ia-node-sub">Bottom sheet · fields by type</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">VH-06</div>
+              <div class="ia-node-name">Edit / remove vehicle</div>
+              <div class="ia-node-sub ia-return">↻ returns to VH-01</div>
+            </div>
+          </div>
+
+          <div class="ia-connectors-2">
+            <div></div>
+            <div class="ia-connector-return">↻ VH-04 dismisses → VH-03</div>
+          </div>
+
+          <div class="ia-impl-note">
+            <strong>Implementation note:</strong> VH-02 filter is a segmented control / chip row — not a nested tab bar. Avoids double navigation hierarchy on iOS and Android.
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════
+           PANEL: HEALTH
+           ══════════════════════════════════ -->
+      <div class="ia-panel" id="ia-panel-health">
+        <div class="ia-panel-header">
+          <span class="ia-panel-eyebrow">Health tab · HC</span>
+          <span class="ia-panel-count">3 screens + empty state</span>
+        </div>
+        <div class="ia-flow">
+
+          <div class="ia-row ia-row-2col">
+            <div class="ia-node ia-node-core ia-node-wide" style="max-width:360px">
+              <div class="ia-node-id">HC-01</div>
+              <div class="ia-node-name">Health overview</div>
+              <div class="ia-node-sub">Segmented filter: All · Compliance · Service · Reports (cross-vehicle)</div>
+            </div>
+            <div class="ia-node ia-node-empty">
+              <div class="ia-node-id">HC-01E</div>
+              <div class="ia-node-name">Empty state</div>
+              <div class="ia-node-sub">No checks logged · prompt add</div>
+            </div>
+          </div>
+
+          <div class="ia-split-labels" style="grid-template-columns:repeat(2,1fr);max-width:480px">
+            <span>check item tap</span><span>Reports filter</span>
+          </div>
+          <div class="ia-split-2" style="max-width:480px"></div>
+
+          <div class="ia-row ia-row-2col" style="max-width:480px">
+            <div class="ia-node ia-node-dl">
+              <div class="ia-node-id">[DL]</div>
+              <div class="ia-node-name">→ VH-03 Check detail</div>
+              <div class="ia-node-sub">Deep-link into Vehicle tab</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">HC-01d</div>
+              <div class="ia-node-name">Reports view</div>
+              <div class="ia-node-sub">Cross-vehicle monthly summary · [DL] from notification</div>
+            </div>
+          </div>
+
+          <div class="ia-impl-note">
+            <strong>Health is a lens, not a store.</strong> All data originates in Vehicle. Health aggregates it cross-vehicle. Nothing is stored independently in this tab.
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════
+           PANEL: TRIPS
+           ══════════════════════════════════ -->
+      <div class="ia-panel" id="ia-panel-trips">
+        <div class="ia-panel-header">
+          <span class="ia-panel-eyebrow">Trips tab · TR</span>
+          <span class="ia-panel-count">5 screens + empty state</span>
+        </div>
+        <div class="ia-flow">
+
+          <div class="ia-row ia-row-2col">
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">TR-01</div>
+              <div class="ia-node-name">Trips list</div>
+              <div class="ia-node-sub">Upcoming · past</div>
+            </div>
+            <div class="ia-node ia-node-empty">
+              <div class="ia-node-id">TR-01E</div>
+              <div class="ia-node-name">Empty state</div>
+              <div class="ia-node-sub">No trips yet · plan one CTA</div>
+            </div>
+          </div>
+
+          <div class="ia-split-labels" style="grid-template-columns:repeat(2,1fr)">
+            <span>+ plan trip</span><span>trip row tap</span>
+          </div>
+          <div class="ia-split-2"></div>
+
+          <div class="ia-row ia-row-2col">
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">TR-02</div>
+              <div class="ia-node-name">Plan a trip</div>
+              <div class="ia-node-sub">Date · start mileage · fuel · toll · other costs</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">TR-03</div>
+              <div class="ia-node-name">Active trip</div>
+              <div class="ia-node-sub">In-progress tracker · [DL] from notification</div>
+            </div>
+          </div>
+
+          <div class="ia-connectors-2">
+            <div class="ia-connector-return">↻ save → TR-01</div>
+            <div class="ia-connector-down"></div>
+          </div>
+
+          <div class="ia-row ia-row-center" style="justify-content:flex-end;padding-right:0">
+            <div class="ia-node ia-node-modal">
+              <div class="ia-node-id">TR-04</div>
+              <div class="ia-node-name">Trip complete</div>
+              <div class="ia-node-sub">Modal · actual costs · shareable summary · <span class="ia-return">↻ dismisses → TR-01</span></div>
+            </div>
+          </div>
+
+          <div class="ia-platform-note">
+            <strong>Android:</strong> TR-04 modal must support system back gesture to dismiss to TR-01 without data loss.
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════
+           PANEL: DEALS
+           ══════════════════════════════════ -->
+      <div class="ia-panel" id="ia-panel-deals">
+        <div class="ia-panel-header">
+          <span class="ia-panel-eyebrow">Deals tab · DL + Tyre Club · TC</span>
+          <span class="ia-panel-count">7 screens</span>
+        </div>
+        <div class="ia-flow">
+
+          <div class="ia-row ia-row-center">
+            <div class="ia-node ia-node-core ia-node-wide">
+              <div class="ia-node-id">DL-01</div>
+              <div class="ia-node-name">Deals &amp; promotions hub</div>
+              <div class="ia-node-sub">Commercial offers · [DL] from Home banner</div>
+            </div>
+          </div>
+
+          <div class="ia-split-labels" style="grid-template-columns:repeat(3,1fr)">
+            <span>buy on credit</span><span>MAZ scheme</span><span>buy tyres</span>
+          </div>
+          <div class="ia-split-3"></div>
+
+          <div class="ia-row ia-row-3col">
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">DL-02</div>
+              <div class="ia-node-name">Buy tyres on credit</div>
+              <div class="ia-node-sub ia-return">Info · contact CTA · ↻ DL-01</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">DL-03</div>
+              <div class="ia-node-name">MAZ scheme</div>
+              <div class="ia-node-sub ia-return">Info · contact CTA · ↻ DL-01</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">DL-04</div>
+              <div class="ia-node-name">Buy tyres</div>
+              <div class="ia-node-sub ia-return">Catalogue · website · ↻ DL-01</div>
+            </div>
+          </div>
+
+          <!-- Tyre Club sub-section -->
+          <div class="ia-subsection-label">Tyre Club section — nested within Deals tab</div>
+          <div class="ia-connector-down"></div>
+
+          <div class="ia-row ia-row-center">
+            <div class="ia-node ia-node-core ia-node-wide">
+              <div class="ia-node-id">TC-01</div>
+              <div class="ia-node-name">Tyre Club hub</div>
+              <div class="ia-node-sub">Branches · Products · Help</div>
+            </div>
+          </div>
+
+          <div class="ia-split-labels" style="grid-template-columns:repeat(3,1fr)">
+            <span>branches</span><span>products</span><span>help</span>
+          </div>
+          <div class="ia-split-3"></div>
+
+          <div class="ia-row ia-row-3col">
+            <div class="ia-node ia-node-modal">
+              <div class="ia-node-id">TC-02</div>
+              <div class="ia-node-name">Branches &amp; hours</div>
+              <div class="ia-node-sub">[DL] → native maps · ↻ TC-01</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">TC-03</div>
+              <div class="ia-node-name">Products &amp; services</div>
+              <div class="ia-node-sub">By category · by brand · ↻ TC-01</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">TC-04</div>
+              <div class="ia-node-name">Help / contact</div>
+              <div class="ia-node-sub">Website · WhatsApp intent · ↻ TC-01</div>
+            </div>
+          </div>
+
+          <div class="ia-platform-note">
+            <strong>Android:</strong> All leaf screens (DL-02–04, TC-02–04) must handle system back gesture to parent hub.
+            &nbsp;·&nbsp; <strong>TC-02</strong> deep-link: tyreclub://branch/{id}/map → opens native Maps app.
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════
+           PANEL: PROFILE
+           ══════════════════════════════════ -->
+      <div class="ia-panel" id="ia-panel-profile">
+        <div class="ia-panel-header">
+          <span class="ia-panel-eyebrow">Profile · PR — avatar icon, any screen</span>
+          <span class="ia-panel-count">3 screens</span>
+        </div>
+        <div class="ia-flow">
+
+          <div class="ia-row ia-row-center">
+            <div class="ia-node ia-node-core ia-node-wide">
+              <div class="ia-node-id">PR-01</div>
+              <div class="ia-node-name">Profile</div>
+              <div class="ia-node-sub">Account info · Tyre Club membership · accessible from avatar top-right on any screen</div>
+            </div>
+          </div>
+
+          <div class="ia-split-labels" style="grid-template-columns:repeat(2,1fr)">
+            <span>notification prefs</span><span>app settings</span>
+          </div>
+          <div class="ia-split-2"></div>
+
+          <div class="ia-row ia-row-2col">
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">PR-02</div>
+              <div class="ia-node-name">Notification preferences</div>
+              <div class="ia-node-sub">WhatsApp · email · day picker · ↻ PR-01</div>
+            </div>
+            <div class="ia-node ia-node-core">
+              <div class="ia-node-id">PR-03</div>
+              <div class="ia-node-name">App settings</div>
+              <div class="ia-node-sub">General preferences · ↻ PR-01</div>
+            </div>
+          </div>
+
+          <div class="ia-impl-note">
+            <strong>Profile is not a tab.</strong> It is accessed via the avatar icon in the top-right navigation bar on every screen. This keeps the bottom tab bar at 5 items and follows HIG conventions for account/settings placement.
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /ia-shell -->
+
+  </section><!-- /ia -->
+
+
+  <!-- ==========================================================
+       SECTION: PROTOTYPE CONNECTIONS
+       Edit proto-group blocks to match your actual flows.
+       ========================================================== -->
+  <section class="section" id="prototype">
+
+    <span class="section-eyebrow">Handoff</span>
+    <h2 class="section-title"><strong>Prototype connections</strong></h2>
+    <p class="section-desc">
+      Every tap and its destination. Use this as the wiring guide when
+      connecting prototype flows in Figma.
+    </p>
+
+    <div class="proto-grid">
+
+      <!-- Onboarding flows -->
+      <div class="proto-group">
+        <span class="proto-group-title">Onboarding</span>
+
+        <div class="proto-row">
+          <div class="proto-from">Splash (OB-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Get Started tap</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Sign in (OB-02)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Sign in (OB-02)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Forgot password</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Reset (OB-04b)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Sign up (OB-03)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Submit</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Notif. (OB-04)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Notif. (OB-04)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Enable / Skip</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Wizard (OB-05)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Wizard (OB-05)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Complete</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Home (HM-01)</div>
+        </div>
+      </div>
+
+      <!-- Home flows -->
+      <div class="proto-group">
+        <span class="proto-group-title">Home</span>
+
+        <div class="proto-row">
+          <div class="proto-from">Home (HM-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Vehicle card tap</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Detail (VH-02)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Home (HM-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Log Trip</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Plan trip (TR-02)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Home (HM-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Log Maintenance</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Log sheet (VH-04)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Home (HM-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Deals card</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Deals (PR-07)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Home (HM-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Avatar tap</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Profile (PR-01)</div>
+        </div>
+      </div>
+
+      <!-- Vehicles flows -->
+      <div class="proto-group">
+        <span class="proto-group-title">Vehicles</span>
+
+        <div class="proto-row">
+          <div class="proto-from">List (VH-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Card tap</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Detail (VH-02)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Detail (VH-02)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Checks row tap</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Check (VH-03)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Check (VH-03)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Log entry CTA</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Sheet (VH-04)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Sheet (VH-04)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Save</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Check (VH-03)</div>
+        </div>
+      </div>
+
+      <!-- Health + Trips flows -->
+      <div class="proto-group">
+        <span class="proto-group-title">Health &amp; Trips</span>
+
+        <div class="proto-row">
+          <div class="proto-from">Health (HC-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Row tap (deep-link)</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Check (VH-03)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Trips (TR-01)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">+ Plan trip</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Plan (TR-02)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Plan (TR-02)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Save trip</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Active (TR-03)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Active (TR-03)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Complete trip</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">Complete (TR-04)</div>
+        </div>
+        <div class="proto-row">
+          <div class="proto-from">Complete (TR-04)</div>
+          <div class="proto-connector">
+            <div class="proto-trigger">Generate summary</div>
+            <div class="proto-line"></div>
+          </div>
+          <div class="proto-to">List (TR-01)</div>
+        </div>
+      </div>
+
+      <!-- Global interactions -->
+      <div class="proto-group span-2">
+        <span class="proto-group-title">Global interactions (any screen)</span>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--sp-3)">
+          <div class="proto-row">
+            <div class="proto-from">Any screen</div>
+            <div class="proto-connector">
+              <div class="proto-trigger">? icon tap</div>
+              <div class="proto-line"></div>
+            </div>
+            <div class="proto-to">Help (PR-08)</div>
+          </div>
+          <div class="proto-row">
+            <div class="proto-from">Any screen</div>
+            <div class="proto-connector">
+              <div class="proto-trigger">Avatar tap</div>
+              <div class="proto-line"></div>
+            </div>
+            <div class="proto-to">Profile (PR-01)</div>
+          </div>
+          <div class="proto-row">
+            <div class="proto-from">Profile (PR-01)</div>
+            <div class="proto-connector">
+              <div class="proto-trigger">Notif. prefs</div>
+              <div class="proto-line"></div>
+            </div>
+            <div class="proto-to">Prefs (PR-03)</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /proto-grid -->
+
+  </section><!-- /prototype -->
+
+
+</div><!-- /main -->
+
+
+<!-- ============================================================
+     JAVASCRIPT
+     Handles: scroll progress bar, sidebar active state,
+     and tyre position selector interaction.
+     ============================================================ -->
+<script>
+
+  // ── SCROLL PROGRESS BAR ──
+  const fill = document.getElementById('progressFill');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const total    = document.body.scrollHeight - window.innerHeight;
+    fill.style.width = Math.round((scrolled / total) * 100) + '%';
+  }, { passive: true });
+
+
+  // ── SIDEBAR ACTIVE STATE ON SCROLL ──
+  const sections  = document.querySelectorAll('.section[id]');
+  const navLinks  = document.querySelectorAll('.nav-item[href]');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle(
+              'active',
+              link.getAttribute('href') === '#' + entry.target.id
+            );
+          });
+        }
+      });
+    },
+    { rootMargin: '-20% 0px -70% 0px' }
+  );
+
+  sections.forEach(section => observer.observe(section));
+
+  // Smooth scroll for sidebar links
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+
+  // ── TYRE POSITION SELECTOR (component demo) ──
+  document.querySelectorAll('.tyre-pos').forEach(pos => {
+    pos.addEventListener('click', function() {
+      // Deselect others in same .tyre-diag, select this one
+      const diag = this.closest('.tyre-diag');
+      diag.querySelectorAll('.tyre-pos').forEach(p => p.classList.remove('selected'));
+      this.classList.add('selected');
+    });
+  });
+
+
+  // ── TAB SWITCHER (component demo only) ──
+  document.querySelectorAll('.tabs').forEach(tabGroup => {
+    tabGroup.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        tabGroup.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  });
+
+  // ── IA MAP TAB SWITCHER ──
+  const iaTabs   = document.querySelectorAll('.ia-tab');
+  const iaPanels = document.querySelectorAll('.ia-panel');
+
+  iaTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const target = this.dataset.panel;
+
+      iaTabs.forEach(t => t.classList.remove('ia-tab-active'));
+      this.classList.add('ia-tab-active');
+
+      iaPanels.forEach(p => {
+        p.classList.remove('ia-panel-active');
+        if (p.id === 'ia-panel-' + target) {
+          p.classList.add('ia-panel-active');
+        }
+      });
+    });
+  });
+
+</script>
+
+</body>
+</html>
