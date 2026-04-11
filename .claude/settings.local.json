@@ -7,7 +7,9 @@
       "Bash(powershell -Command \"Get-Content 'C:\\\\Users\\\\MELPRODCOMMS\\\\Desktop\\\\Code\\\\tyre-club-prototype-presentation\\\\assets\\\\modules\\\\OB-04b.svg' -TotalCount 30\")",
       "Bash(powershell -Command ':*)",
       "Bash(powershell -Command \"Get-Item 'C:\\\\Users\\\\MELPRODCOMMS\\\\Downloads\\\\Group 22169.svg', 'C:\\\\Users\\\\MELPRODCOMMS\\\\Downloads\\\\Group 22170.svg', 'C:\\\\Users\\\\MELPRODCOMMS\\\\Downloads\\\\Group 22169 \\(1\\).svg' | Select-Object Name, Length\")",
-      "Bash(powershell -Command 'Get-ChildItem '\\\\''C:\\\\Users\\\\MELPRODCOMMS\\\\Desktop\\\\Code\\\\tyre-club-prototype-presentation\\\\assets\\\\modules\\\\'\\\\'' | Where-Object { $_.Name -match '\\\\''nav|bar|bottom|tab'\\\\'' } | Select-Object Name, Length')"
+      "Bash(powershell -Command 'Get-ChildItem '\\\\''C:\\\\Users\\\\MELPRODCOMMS\\\\Desktop\\\\Code\\\\tyre-club-prototype-presentation\\\\assets\\\\modules\\\\'\\\\'' | Where-Object { $_.Name -match '\\\\''nav|bar|bottom|tab'\\\\'' } | Select-Object Name, Length')",
+      "Bash(powershell -Command \"\\(Get-Content 'C:\\\\Users\\\\MELPRODCOMMS\\\\Desktop\\\\Code\\\\tyre-club-prototype-presentation\\\\styles.css' -Raw\\).Length / 1024\")",
+      "Bash(n\\\\\")"
     ]
   }
 }
