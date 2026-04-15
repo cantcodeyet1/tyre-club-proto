@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tyre Club — Design System | Kwanix Enterprises</title>
+<link rel="icon" type="image/x-icon" href="assets/Logo.png">
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -1094,91 +1095,6 @@
 
     <div class="divider"></div>
 
-    <!-- ── 12g TYRE POSITION SELECTOR ── -->
-    <div class="comp-label">Tyre position selector</div>
-    <svg width="320" height="210" viewBox="0 0 320 210" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
-      <defs>
-        <linearGradient id="tyre-sel-grad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#FFF200"/>
-          <stop offset="1" stop-color="#FFCB14"/>
-        </linearGradient>
-      </defs>
-      <!-- Container -->
-      <rect x="0" y="0" width="200" height="200" rx="16" fill="rgba(0,0,0,0.04)" stroke="rgba(0,0,0,0.07)" stroke-width="1"/>
-
-      <!-- Car body -->
-      <rect x="72" y="30" width="56" height="130" rx="12" fill="white" stroke="#D1D2D4" stroke-width="1.5"/>
-      <!-- windscreen lines -->
-      <rect x="80" y="44" width="40" height="24" rx="4" fill="#E8F4FF" stroke="#D1D2D4" stroke-width="1"/>
-      <rect x="80" y="118" width="40" height="24" rx="4" fill="#E8F4FF" stroke="#D1D2D4" stroke-width="1"/>
-      <!-- door line -->
-      <line x1="72" y1="95" x2="128" y2="95" stroke="#D1D2D4" stroke-width="1"/>
-
-      <!-- FL tyre — SELECTED (yellow) -->
-      <rect x="26" y="28" width="36" height="18" rx="4" fill="url(#tyre-sel-grad)" stroke="#FFCB14" stroke-width="1"/>
-      <text x="44" y="37" font-family="'DM Sans', sans-serif" font-size="9" fill="#111" font-weight="700" text-anchor="middle" dominant-baseline="middle">FL</text>
-
-      <!-- FR tyre -->
-      <rect x="138" y="28" width="36" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
-      <text x="156" y="37" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">FR</text>
-
-      <!-- RL tyre -->
-      <rect x="26" y="130" width="36" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
-      <text x="44" y="139" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">RL</text>
-
-      <!-- RR tyre -->
-      <rect x="138" y="130" width="36" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
-      <text x="156" y="139" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">RR</text>
-
-      <!-- Spare tyre -->
-      <rect x="74" y="170" width="52" height="18" rx="4" fill="white" stroke="#D1D2D4" stroke-width="1"/>
-      <text x="100" y="179" font-family="'DM Sans', sans-serif" font-size="9" fill="#5a5755" font-weight="500" text-anchor="middle" dominant-baseline="middle">Spare</text>
-
-      <!-- Hint text -->
-      <text x="100" y="198" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" text-anchor="middle">Tap to select position</text>
-
-      <!-- Annotation: FL selected -->
-      <text x="220" y="30" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.05em">FL SELECTED</text>
-      <line x1="62" y1="37" x2="215" y2="37" stroke="#FFCB14" stroke-width="1" stroke-dasharray="3 3"/>
-      <circle cx="62" cy="37" r="3" fill="#FFCB14"/>
-
-      <!-- Annotation: default state -->
-      <text x="220" y="90" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490" font-weight="600" letter-spacing="0.05em">DEFAULT</text>
-      <line x1="174" y1="139" x2="215" y2="97" stroke="#D1D2D4" stroke-width="1" stroke-dasharray="3 3"/>
-      <circle cx="174" cy="139" r="3" fill="#D1D2D4"/>
-    </svg>
-
-    <div class="divider"></div>
-
-    <!-- ── 12h QUICK ACTION STRIP ── -->
-    <div class="comp-label">Quick action strip</div>
-    <svg width="345" height="62" viewBox="0 0 345 62" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
-      <defs>
-        <filter id="qa-shadow" x="-4%" y="-10%" width="108%" height="130%">
-          <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.07"/>
-        </filter>
-      </defs>
-      <!-- Log Trip button -->
-      <rect x="0" y="0" width="166" height="54" rx="14" fill="white" stroke="#F2F2F2" stroke-width="1" filter="url(#qa-shadow)"/>
-      <!-- icon box -->
-      <rect x="14" y="14" width="28" height="28" rx="8" fill="rgba(245,200,0,0.12)" stroke="rgba(245,200,0,0.30)" stroke-width="1"/>
-      <!-- arrow-up-right icon -->
-      <path d="M24 32 L32 24 M28 24 L32 24 L32 28" stroke="#7a6000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="52" y="25" font-family="'DM Sans', sans-serif" font-size="12" fill="#1a1a1a" font-weight="500" dominant-baseline="middle">Log Trip</text>
-      <text x="52" y="40" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490">Record a journey</text>
-
-      <!-- Log Maintenance button -->
-      <rect x="179" y="0" width="166" height="54" rx="14" fill="white" stroke="#F2F2F2" stroke-width="1" filter="url(#qa-shadow)"/>
-      <!-- icon box -->
-      <rect x="193" y="14" width="28" height="28" rx="8" fill="rgba(245,200,0,0.12)" stroke="rgba(245,200,0,0.30)" stroke-width="1"/>
-      <!-- wrench icon -->
-      <path d="M207 22 L203 30 L205 32 L213 28 L213 24 Z" fill="rgba(245,200,0,0.5)" stroke="#7a6000" stroke-width="1" stroke-linejoin="round"/>
-      <circle cx="211" cy="23" r="2" fill="none" stroke="#7a6000" stroke-width="1.2"/>
-      <text x="231" y="25" font-family="'DM Sans', sans-serif" font-size="12" fill="#1a1a1a" font-weight="500" dominant-baseline="middle">Log Maintenance</text>
-      <text x="231" y="40" font-family="'DM Sans', sans-serif" font-size="10" fill="#9a9490">Record a service</text>
-    </svg>
-
-    <div class="divider"></div>
 
     <!-- ── 12f BOTTOM NAVIGATION ── -->
     <div class="comp-label">Bottom navigation bar</div>
